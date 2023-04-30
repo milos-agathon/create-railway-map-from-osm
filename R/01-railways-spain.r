@@ -73,7 +73,7 @@ spain_clone_dir <- "spain_clone_osm"
 dir.create(spain_clone_dir)
 spain_clone_dir_out <- main_path |>
     paste0("/", spain_clone_dir)
-
+setwd(out_dir_spain)
 zip_files <- list.files()
 
 for (z in 1:length(zip_files)) {
